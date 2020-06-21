@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  pyspark:
+    build: .
+    command: [ 'start-notebook.sh', '--ip', '0.0.0.0', '--no-browser', "--NotebookApp.token=''",  "--NotebookApp.password=''", "--NotebookApp.allow_origin='*'", "--allow-root" ]
+    ports:
+        - "8889:8888"
+        - "4040:4040"
+        - "4041:4041"
+    volumes:
+        - ./:/home/jovyan/
+        
+
+
