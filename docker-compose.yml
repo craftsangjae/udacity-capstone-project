@@ -5,11 +5,20 @@ services:
     build: .
     command: [ 'start-notebook.sh', '--ip', '0.0.0.0', '--no-browser', "--NotebookApp.token=''",  "--NotebookApp.password=''", "--NotebookApp.allow_origin='*'", "--allow-root" ]
     ports:
-        - "8889:8888"
+        - "8888:8888"
         - "4040:4040"
         - "4041:4041"
     volumes:
         - ./:/home/jovyan/
-        
+    links:
+        - postgres
+  postgres:
+    image: mnementh64/docker-postgresql-cstore:latest
+    ports:
+        - "5432:5432"
+    environment:
+        - POSTGRES_PASSWORD=postgres
+
+
 
 
