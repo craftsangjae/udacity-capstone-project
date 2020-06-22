@@ -1,5 +1,8 @@
 ## Udacity Data Engineering Capstone Project
 
+![](https://imgur.com/SrQms5c.png)
+
+
 ### Project Description
 
 Amazon Customer Reviews is one of Amazon’s iconic products. In a period of over two decades since the first review in 1995, millions of Amazon customers have contributed over a hundred million reviews to express opinions and describe their experiences regarding products on the Amazon.com website. Specifically, this dataset was constructed to represent a sample of customer evaluations and opinions, variation in the perception of a product across geographical regions, and promotional intent or bias in reviews.
